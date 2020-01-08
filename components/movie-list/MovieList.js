@@ -22,6 +22,9 @@
             _('p', { class: 'movieList-item-itemText-date' }, [
               [releaseDate.getDate() + 1, releaseDate.getMonth() + 1, releaseDate.getFullYear()].join('/')
             ]),
+          ]),
+          _('div', { class: 'movieList-item-actions' }, [
+            _('button', { class: 'button' }, ['Favorite'])
           ])
         ])
       );

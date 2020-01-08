@@ -12,7 +12,10 @@
     });
 
     return _('div', { class: 'searchBar' }, [
-      input
+      input,
+      _('select', { class: 'searchBar-select' }, [
+        _('option', { value: 0 }, ['Most voted'])
+      ])
     ])
   }
 })();

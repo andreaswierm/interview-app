@@ -16,7 +16,11 @@
 }
 
 .movieList-item-divider {
-  border-top: 1px solid #eeeeee;
+  border: none;
+  height: 1px;
+  margin: 0;
+  flex-shrink: 0;
+  background-color: rgba(0, 0, 0, 0.12);
 }
 
 .movieList-item-itemText-title {
@@ -29,4 +33,27 @@
   font-size: 16px;
   margin: 6px 0 0 0;
   color: #9e9e9e;
+}
+
+.movieList-item-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding-left: 12px;
+}
+
+.button {
+  padding: 6px 12px;
+  color: rgb(25, 118, 210);
+  border: 1px solid rgba(25, 118, 210, 0.5);
+  padding: 5px 15px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  box-sizing: border-box;
 }
